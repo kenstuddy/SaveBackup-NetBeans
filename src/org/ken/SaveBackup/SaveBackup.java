@@ -46,7 +46,7 @@ public class SaveBackup implements OnSaveTask {
     public void performTask() {
         //Create a new DataObject based on the stream used to initialize the document.
         DataObject data = (DataObject) doc.getProperty(Document.StreamDescriptionProperty);
-        //Create a new FileObject based on the primary file of the Data Object.
+        //Create a new FileObject based on the primary file of the DataObject.
         FileObject file = data.getPrimaryFile();
         
         //This is actually the full name and path of the file, not just the path.
