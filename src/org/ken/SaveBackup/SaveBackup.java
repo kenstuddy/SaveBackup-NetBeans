@@ -33,7 +33,7 @@ public class SaveBackup implements OnSaveTask {
     
    /**
     * Private SaveBackup constructor that takes a parameter of type Document.
-    * @param document The current document
+    * @param document The Document interface.
     */
     private SaveBackup(Document document) {
         this.doc = document;
@@ -103,7 +103,7 @@ public class SaveBackup implements OnSaveTask {
     
     /**
      * Override the performTask method of the OnSaveTask interface, this takes a parameter of type runnable.
-     * @param r The Runnable interface
+     * @param r The Runnable interface.
      */
     @Override
     public void runLocked(Runnable r) {
